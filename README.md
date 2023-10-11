@@ -1,12 +1,5 @@
 ﻿# Semester Project Template <!-- omit in toc -->
 
-- [Project Structure](#project-structure)
-  - [Example repo](#example-repo)
-- [Getting Started](#getting-started)
-- [Support](#support)
-
-
-This repository serves as a template for organizing your semester project.
 
 ## Project Structure
 
