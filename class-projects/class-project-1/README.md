@@ -1,4 +1,4 @@
-# [Class Project 1: Figma essentials]
+# Class Project 1: Figma essentials
 
 Project Tasks:
 
