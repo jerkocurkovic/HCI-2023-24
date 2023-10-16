@@ -1,3 +1,7 @@
-# [Class Project Title]
+# [Class Project 1: Figma essentials]
 
-Provide a short description of your results, if applicable.
+Project Tasks:
+
+Create a simple responsive hero section in Figma; elements/components in your Figma frame should nicely behave as you resize the corresponding parent frame.
+The hero section will include a menu. Make menu items a Figma component.
+Use a
