@@ -1,3 +1,5 @@
-# [Class Project Title]
+# User personas and information architecture
 
-Provide a short description of your results, if applicable.
+Project Tasks:
+  1. Create 3 User Personas
+  2. Create a Sitemap
