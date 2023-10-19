@@ -1,3 +1,4 @@
-# [Class Project Title]
+# Class Project 2.2: Sitemap
 
-Provide a short description of your results, if applicable.
+Project task:  
+  Create Sitemap of your page based on User Personas made in previous task.
