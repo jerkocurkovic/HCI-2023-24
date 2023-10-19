@@ -1,3 +1,5 @@
-# [Class Project Title]
+# Class Project 2.1: User Personas
 
-Provide a short description of your results, if applicable.
+Project task:  
+Create 3 User Personas.  
+I made 3 with help of ChatGPT
