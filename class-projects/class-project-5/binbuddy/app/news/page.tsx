@@ -74,10 +74,10 @@ export default async function News({
                 pathname: "/news",
                 query: { _page: page > 1 ? page - 1 : 1, _limit: pageSize },
               }}
-              className={clsx(
+             /* className={clsx(
                 "rounded border bg-gray-100 px-3 py-1 text-gray-800",
                 page === 1 && "pointer-events-none opacity-50"
-              )}
+              )}*/
             >
               Previous
             </Link>
@@ -86,10 +86,10 @@ export default async function News({
                 pathname: "/news",
                 query: { _page: page + 1, _limit: pageSize },
               }}
-              className={clsx(
+             /* className={clsx(
                 "rounded border bg-gray-100 px-3 py-1 text-gray-800",
                 page === totalPages && "pointer-events-none opacity-50"
-              )}
+              )}*/
             >
               Next
             </Link>
