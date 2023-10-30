@@ -12,4 +12,4 @@
     
     **Solution:**
     
-    ![Desktop - 1 (3).png](Class%20Project%204%20High-fidelity%20prototype%20dde0f4abff2c459b973acaf45aa19cf5/Desktop_-_1_(3).png)
+    ![Desktop_-_1_(3)](https://github.com/jerkocurkovic/HCI-2023-24/assets/92371490/2cb3252b-3b88-4e25-b92d-dcc55889c220)
