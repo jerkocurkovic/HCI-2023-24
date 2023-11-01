@@ -12,4 +12,4 @@
     
     **Solution:**
     
-![Desktop - 1 (4)](https://github.com/jerkocurkovic/HCI-2023-24/assets/92371490/5b833ab6-9ac2-4995-99d6-ebdb5fc69663)
+![Desktop - 1 (2)](https://github.com/jerkocurkovic/HCI-2023-24/assets/92371490/d1327370-ba9a-4f00-9f8c-3669dcacf6fd)
