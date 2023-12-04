@@ -16,6 +16,7 @@
 ![Desktop - 1 (2)](https://github.com/jerkocurkovic/HCI-2023-24/assets/92371490/d1327370-ba9a-4f00-9f8c-3669dcacf6fd)
 
   - Mobile version
+        
     ![Android Small - 1](https://github.com/jerkocurkovic/HCI-2023-24/assets/92371490/f14c27e1-d101-431f-ae29-46cdad64bbd0)
 
       **Link:**
