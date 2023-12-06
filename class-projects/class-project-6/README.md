@@ -22,3 +22,5 @@
       **Link:**
     https://binbuddy.vercel.app/
 
+    Imam problema oko izrade ovih pravokutnih odsjecaka na vrhu i menia za mobilnu verziju pa zato to nisam implementirao za ovaj task. Nastojat cu to rjesiti u sto kracem roku.
+
