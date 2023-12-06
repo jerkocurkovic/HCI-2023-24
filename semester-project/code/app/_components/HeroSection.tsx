@@ -19,7 +19,7 @@ const HeroSection = () => (
         <span className="font-abeezee font-bold text-xl text-brand-black-500 whitespace-nowrap">
           binBuddy.
         </span>
-        , where sustainable living meets smart technology. Our mission is simple: to revolutionize waste management and nurture a greener, cleaner world. Together, let's make every bin count!"
+        , where sustainable living meets smart technology. Our mission is simple: to revolutionize waste management and nurture a greener, cleaner world. Together, lets make every bin count!
       </p>
 
       <div className="flex gap-5 mt-4 self-center lg:self-start">
