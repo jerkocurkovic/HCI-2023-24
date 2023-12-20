@@ -1,0 +1,17 @@
+{
+    "company": {
+      "name": "binBuddy",
+      "description": "Dobrodošli u binBuddy - vašeg najboljeg prijatelja za upravljanje otpadom! binBuddy je vodeća aplikacija za upravljanje otpadom, posvećena stvaranju pozitivnog utjecaja na okoliš. Naša platforma olakšava sortiranje otpada i recikliranje za korisnike svih dobnih skupina.",
+      "mission": "Naša misija je potaknuti ekološku održivost pružanjem korisnički prijateljske platforme koja potiče odgovorno odlaganje otpada. S binBuddyjem možete ostvariti pozitivan utjecaj na okoliš, jedan kontejner odjednom."
+    },
+    "howToUse": {
+      "steps": [
+        "Preuzmite binBuddy aplikaciju - posjetite trgovinu aplikacija i preuzmite binBuddy na svoj uređaj.",
+        "Kreirajte račun ili se prijavite - ako već nemate račun, jednostavno kreirajte novi ili se prijavite ako već imate postojeći.",
+        "Dodajte svoje otpadne predmete - započnite dodavati svoje predmete za odlaganje i dopustite binBuddyju da vas vodi kroz ispravne metode odlaganja.",
+        "Pratite svoj reciklirani otpad - pratite svoj napredak u recikliranju i osvajajte nagrade za svoje ekološke napore!"
+      ],
+      "image": "/images/how-to-use-image.jpg"
+    }
+  }
+  
