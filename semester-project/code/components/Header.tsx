@@ -1,7 +1,9 @@
 /*
 import '@/app/globals.css'
-
-/*const Header = () => {
+import Image from 'next/image';
+import header from "@/public/header/header.png"
+/*
+const Header = () => {
     return(
     <div className="flex">
        <div className="transform rotate-45 translate-y-[-55%] w-60 h-60 bg-brand-black-500 mx-4"></div>
@@ -28,5 +30,5 @@ const Header = () => {
     );
 };
 
-//export default Header;
+export default Header;
 */
