@@ -1,20 +1,20 @@
 {
-    "company": {
-      "name": "binBuddy",
-      "description": "Dobrodošli u binBuddy - vašeg najboljeg prijatelja za upravljanje otpadom!",
-      "mission": "binBuddy je vodeća aplikacija za upravljanje otpadom, posvećena stvaranju pozitivnog utjecaja na okoliš. Naša platforma olakšava sortiranje otpada i recikliranje za korisnike svih dobnih skupina.Naša misija je potaknuti ekološku održivost pružanjem korisnički prijateljske platforme koja potiče odgovorno odlaganje otpada."
-    },
-    "howToUse": {
-      "tittle": "Kako Koristiti binBuddy" ,
-      "text": "Jednostavno preuzmite našu aplikaciju putem trgovine aplikacija i kreirajte račun. Mi ćemo vam pružiti smjernice kako najbolje reciklirati ili zbrinuti predmete"
-    },
-    "ourVision":{
-        "tittle": "Naša Vizija",
-        "text": "Želimo potaknuti globalnu revoluciju u odnosu prema otpadu. Nudimo alate, resurse i potporu kako bismo zajedno izgradili svijet bez otpada, gdje svaka akcija ima pozitivan ekološki utjecaj."
-    },
-    "joinUs":{
-        "tittle": "Pridruži Nam Se!",
-        "text": "Pridružite se binBuddy zajednici i postanite promotor održivog života. Neka vaša svakodnevna djela čine razliku u očuvanju planeta Zemlje!"
-    }
+  "company": {
+    "name": "binBuddy",
+    "description": "Welcome to binBuddy - your best friend for waste management!",
+    "mission": "binBuddy is the leading waste management application, dedicated to making a positive impact on the environment. Our platform simplifies waste sorting and recycling for users of all ages. Our mission is to promote ecological sustainability by providing a user-friendly platform that encourages responsible waste disposal."
+  },
+  "howToUse": {
+    "tittle": "How to Use binBuddy",
+    "text": "Simply download our application from the app store and create an account. We will provide you with guidance on how to best recycle or dispose of items."
+  },
+  "ourVision": {
+    "tittle": "Our Vision",
+    "text": "We aim to inspire a global revolution in waste management. We offer tools, resources, and support to collectively build a world without waste, where every action has a positive ecological impact."
+  },
+  "joinUs": {
+    "tittle": "Join Us!",
+    "text": "Join the binBuddy community and become a promoter of sustainable living. Let your everyday actions make a difference in preserving the planet Earth!"
+  }
   }
   
