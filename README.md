@@ -1,12 +1,11 @@
-﻿# Semester Project Template <!-- omit in toc -->
+﻿# Semester project "binBuddy" for Human Computer Interaction course
 
 
-## Project Structure
+## Shortcuts
 
-- **`/semester-project`**: The source code of my main project; place the source code for the full-fledged implementation here.
-- **`/class-projects`**: Results of my mini class semester projects.
-- **`/docs`**: Project documentation is in this folder.
-- **`/misc`**: Files related to the project are in this directory.
+- **Last class-project** -> [Weekly progress, status and problems (1/4)](/class-projects/Weekly-progress,status-and-problems-(1of4)/)
+- **Link to project** ->  https://binbuddy.vercel.app/
+
 
 
 
