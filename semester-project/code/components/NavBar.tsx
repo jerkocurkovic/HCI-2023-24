@@ -24,7 +24,7 @@ const NavBar = () => {
   const [open, setOpen] = useState(false);
   
   return (
-    <div className="container flex items-center justify-between mx-auto mb-20">
+    <div className="container flex items-center justify-between mx-auto mb-10">
       <Logo />
       <MainNav pages={pages} />
     </div>
