@@ -1,6 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import Button from "@/components/Button";
-
+import Link from "next/link";
 import heroImage1 from "@/public/hero/recycleng-woman.jpg";
 
 
@@ -26,14 +26,14 @@ const HeroSection = () => (
           className="text-base xl:text-lg xl:px-8"
           iconClassName="xl:w-4 xl:h-4"
         >
-          Log in
+          <Link href="/login">Log in</Link>
         </Button>
         <Button
           grey
           className="hidden sm:flex text-base xl:text-lg xl:px-8"
           iconClassName="xl:w-4 xl:h-4"
         >
-          About
+          <Link href="/about">About</Link>
         </Button>
       </div>
 
