@@ -2,6 +2,7 @@
 import Icons from "@/components/icons/Icons";
 import Image, { StaticImageData } from "next/image";
 import logoiconfooter from "@/app/icon.png"
+import Link from "next/link";
 
 type TitleProps = {
   children: string;
@@ -49,24 +50,25 @@ const Footer = () => (
         </div>
         <div className="flex flex-wrap justify-center gap-11">
           <FooterList
-            title="Useful Resources:"
+            title="Useful Resources"
             items={[
               "Terms of Use",
               "Privacy Policy",
               "FAQ",
             ]}
           />
-          <FooterList
-            title="Sitemap"
-            items={[
-              "Home",
-              "News",
-              "Map",
-              "Recycle",
-              "About",
-              "Log In",
-            ]}
-          />
+          <div>
+            <FooterListTitle>Sitemap</FooterListTitle>
+            <ul className="font-abeezee text-brand-black-500 mb-4">
+              <li><Link href="/">Home</Link></li>
+              <li><Link href="/news">News</Link></li>
+              <li><Link href="/map">Map</Link></li>
+              <li><Link href="/recycle">Recycle</Link></li>
+              <li><Link href="/about">About</Link></li>
+              <li><Link href="/login">Log In</Link></li>
+            </ul>
+          </div>
+          
           <div>
             <FooterListTitle>Contact Us</FooterListTitle>
             <ul className="font-abeezee text-brand-black-500 mb-4">
