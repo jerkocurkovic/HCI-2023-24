@@ -2,9 +2,7 @@ import Image, { StaticImageData } from "next/image";
 import Button from "@/components/Button";
 
 import heroImage1 from "@/public/hero/recycleng-woman.jpg";
-import heroImage2 from "@/public/hero/recycling-truck.jpg";
-import heroImage4 from "@/public/hero/recycling-gang.jpg";
-import heroImage3 from "@/public/hero/paying-bills.jpg";
+
 
 
 
