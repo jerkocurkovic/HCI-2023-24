@@ -25,8 +25,8 @@ const articles: HomeAboutCardProps[] = [
 const HomeAboutSection = () => (
   <section className="container flex flex-col gap-10 lg:gap-20 items-center bg-brand-green-500">
     <div className="text-center mt-4">
-      <h1 className="sm:hidden font-abeezee text-3xl font-extrabold text-brand-white-500">
-        About our app
+      <h1 className="sm:hidden font-abeezee text-3xl font-extrabold text-white">
+        How binBuddy works
       </h1>
       <h1 className="hidden sm:block font-abeezee text-3xl font-extrabold text-white">
         How binBuddy works
