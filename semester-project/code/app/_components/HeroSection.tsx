@@ -9,8 +9,8 @@ import heroImage3 from "@/public/hero/paying-bills.jpg";
 
 
 const HeroSection = () => (
-  <section className="container flex justify-around items-center gap-50 w-screen mt-4">
-    <div className="flex flex-col justify-center gap-50 max-w-xl">
+  <section className="container flex justify-between items-center gap-10 w-screen mt-4 mb-8">
+    <div className="flex flex-col justify-center gap-50 max-w-xl m-auto lg:m-0">
       <h1 className="font-abeezee text-4xl font-extrabold text-brand-black-500 whitespace-break-spaces mb-2">
       binBuddy - Your best friend for waste management!
       </h1>
@@ -40,7 +40,7 @@ const HeroSection = () => (
       </div>
 
     </div>
-    <div className="flex-shrink-0 relative h-60 w-80">
+    <div className="flex-shrink-0 relative h-60 w-80 hidden lg:block">
     <Image
         src={heroImage1}
         alt={`Woman recycling`}
