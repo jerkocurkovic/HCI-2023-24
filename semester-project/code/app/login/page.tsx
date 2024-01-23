@@ -7,22 +7,6 @@ export const metadata = {
   
 function LogIn(){
     return(
-        /*<main className="flex justify-center text-4xl p-14">
-            <div className="bg-white rounded-lg font-abeezee text-center">
-                <h1 className="text-3xl font-bold mb-4">Our sincere apologies!</h1>
-                <p>We are currently working on improving our login page. Thank you for your understanding.</p>
-                <div className="flex-shrink-0 relative h-60 w-80 hidden lg:block">
-                <Image
-                    src={image1}
-                    alt={`Teamwork`}
-                    fill
-                    style={{
-                    objectFit: "cover",
-                    }}
-                />
-                </div>
-            </div>
-        </main>*/
         <div className="flex flex-col max-w-[850px] min-w-[300px] xl:max-w-[850px] mx-auto bg-white overflow-hidden mb-10">
             
             <div className="flex-1 flex flex-col justify-between px-6 py-4 text-center">
