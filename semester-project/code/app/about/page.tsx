@@ -42,7 +42,7 @@ function About(){
           About {aboutData.company.name}
           </h1>
         </div>
-        <div className="flex-col gap-10">
+        <div className="flex-col gap-20">
           {articles.map((articles) => (
             <AboutPageCard key={articles.title} {...articles} />
           ))}
