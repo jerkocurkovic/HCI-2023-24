@@ -12,9 +12,9 @@ const AboutPageCard = ({
   title,
   body,
 }: AboutPageCardProps) => (
-  <div className="flex mx-auto bg-white shadow-lg rounded-lg overflow-hidden mb-4 transition-transform transform hover:scale-110">
+  <div className=" flex md:flex-row flex-col mx-auto bg-white shadow-lg rounded-lg overflow-hidden mb-8">
     <Image
-      className="w-48 h-48 object-cover object-center"
+      className="md:w-48 w-full h-48 object-cover object-center"
       sizes="50vw"
       src={image}
       placeholder="blur"
