@@ -38,7 +38,7 @@ function About(){
     return (
         <section className="container flex flex-col gap-10 lg:gap-20 items-center">
         <div className="text-center mt-4">
-          <h1 className="hidden sm:block font-abeezee text-3xl font-extrabold text-bg-brand-black-500">
+          <h1 className="sm:block font-abeezee text-3xl font-extrabold text-bg-brand-black-500 mb-8">
           About {aboutData.company.name}
           </h1>
         </div>
