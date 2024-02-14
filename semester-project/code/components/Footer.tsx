@@ -49,14 +49,16 @@ const Footer = () => (
           </span>
         </div>
         <div className="flex flex-wrap justify-center gap-11">
-          <FooterList
-            title="Useful Resources"
-            items={[
-              "Terms of Use",
-              "Privacy Policy",
-              "FAQ",
-            ]}
-          />
+          
+          <div>
+            <FooterListTitle>Useful Resources</FooterListTitle>
+            <ul className="font-abeezee text-brand-black-500 mb-4">
+              <li><Link href="/termsOfUse">Terms of Use</Link></li>
+              <li><Link href="/privacyPolicy">Privacy Policy</Link></li>
+              <li><Link href="/faq">FAQ</Link></li>
+            </ul>
+          </div>
+
           <div>
             <FooterListTitle>Sitemap</FooterListTitle>
             <ul className="font-abeezee text-brand-black-500 mb-4">
