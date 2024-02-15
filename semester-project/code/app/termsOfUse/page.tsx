@@ -45,7 +45,7 @@ export default function TermsOfUse() {
                         Cookies
                         </h2>
                         <p className="font-abeezee text-brand-black-500 leading-6">We employ the use of cookies. By accessing binBuddy, you agreed to
-                        use cookies in agreement with the binBuddy's Privacy Policy.
+                        use cookies in agreement with the binBuddys Privacy Policy.
                         </p>
                         <br />
                         <p className="font-abeezee text-brand-black-500 leading-6">Most interactive websites use cookies to let us retrieve the users
