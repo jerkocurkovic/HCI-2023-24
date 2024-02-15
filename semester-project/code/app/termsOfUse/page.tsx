@@ -19,7 +19,7 @@ export default function TermsOfUse() {
                     <div className="text-left">
                         <p className="font-abeezee text-brand-black-500 leading-6">Welcome to binBuddy!</p>
                         <br />
-                        <p className="font-abeezee text-brand-black-500 leading-6">These terms and conditions outline the rules and regulations for the use of binBuddy's Website,
+                        <p className="font-abeezee text-brand-black-500 leading-6">These terms and conditions outline the rules and regulations for the use of binBuddys Website,
                             located at
                         </p>
                         <p className="font-abeezee text-brand-green-600"><Link href="/">binbuddy.vercel.app.</Link></p>
@@ -29,8 +29,8 @@ export default function TermsOfUse() {
                         </p>
                         <br />
                         <p className="font-abeezee text-brand-black-500 leading-6">The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements:
-                            "Client", "You" and "Your" refers to you, the person log on this website and compliant to the Companys terms and conditions.
-                            "The Company", "Ourselves", "We", "Our" and "Us", refers to our Company. "Party", "Parties", or "Us", refers to both the Client
+                            Client, You and Your refers to you, the person log on this website and compliant to the Companys terms and conditions.
+                            The Company, Ourselves, We, Our and Us, refers to our Company. Party, Parties, or Us, refers to both the Client
                             and ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our
                                 assistance to the Client in the most appropriate manner for the express purpose of meeting the Clients needs in respect of
                                 provision of the Companys stated services, in accordance with and subject to, prevailing law of Netherlands.
