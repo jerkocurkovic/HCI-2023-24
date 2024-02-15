@@ -4,19 +4,19 @@
       "description": "Welcome to our Frequently Asked Questions (FAQ) page. Here you will find answers to the most common questions our users ask. If you don't find an answer to your question, feel free to contact us.",
       "questions": [
         {
-          "question": "How can I open an account on the binBuddy platform?",
+          "question": "1. How can I open an account on the binBuddy platform?",
           "answer": "Opening an account on the binBuddy platform is very simple. Just click on the 'Register' button on the homepage and follow the instructions to create your account. After entering the required information and verifying your account via email, you'll be ready to start using our platform."
         },
         {
-          "question": "How can I sort waste using the binBuddy app?",
+          "question": "2. How can I sort waste using the binBuddy app?",
           "answer": "To sort waste using the binBuddy app, simply open the app, select the option to add new waste, and then choose the type of waste you want to sort. Follow the on-screen instructions to properly determine the type and quantity of waste you want to dispose of."
         },
         {
-          "question": "How can I learn more about sustainable living and recycling?",
+          "question": "3. How can I learn more about sustainable living and recycling?",
           "answer": "On the binBuddy platform, you can find many useful resources and articles to help you learn more about sustainable living and recycling. Visit our 'Resources' section to find informative articles, tips, and guidelines on sustainable living and recycling."
         },
         {
-          "question": "How can I contact the binBuddy platform customer service?",
+          "question": "4. How can I contact the binBuddy platform customer service?",
           "answer": "If you have any questions, issues, or feedback, feel free to contact us through our support page. Our customer service is always ready to assist you and provide you with the necessary information and support."
         }
       ]
