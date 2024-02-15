@@ -1,5 +1,3 @@
-import Image from "next/image"
-import image1 from "@/public/notFound/notfound.png"
 import Button from "@/components/Button"
 import Link from "next/link"
 
@@ -8,7 +6,7 @@ export const metadata = {
 };
 
 
-export default function NotFound() {
+export default function TermsOfUse() {
     return(
         <div className="flex flex-col max-w-[850px] min-w-[300px] xl:max-w-[850px] mx-auto bg-white overflow-hidden mb-10">
             
