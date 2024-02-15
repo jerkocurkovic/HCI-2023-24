@@ -18,34 +18,45 @@ export default function TermsOfUse() {
                     </h1>
 
                     <div className="text-left">
-                    <p className="font-abeezee text-brand-black-500 leading-6">{privacyPolicyData.PrivacyPolicy.description}</p>
-                    <br />
-                    <p className="font-abeezee text-brand-black-500 leading-6">{privacyPolicyData.PrivacyPolicy.contactInfo}</p>
-                    <br />
-                    <p className="font-abeezee text-brand-black-500 leading-6">{privacyPolicyData.PrivacyPolicy.applicability}</p>
-                    <br />
-                    <br />
+                        <p className="font-abeezee text-brand-black-500 leading-6">{privacyPolicyData.PrivacyPolicy.description}</p>
+                        <br />
+                        <p className="font-abeezee text-brand-black-500 leading-6">{privacyPolicyData.PrivacyPolicy.contactInfo}</p>
+                        <br />
+                        <p className="font-abeezee text-brand-black-500 leading-6">{privacyPolicyData.PrivacyPolicy.applicability}</p>
+                        <br />
+                        <br />
 
-                    <h2 className="sm:block font-abeezee text-xl font-extrabold text-brand-black-500 mb-8">
-                    {privacyPolicyData.PrivacyPolicy.title2}
-                    </h2>
-                    <p className="font-abeezee text-brand-black-500 leading-6">{privacyPolicyData.PrivacyPolicy.consent}</p>
-                    <br />
-                    <br />
+                        <h2 className="sm:block font-abeezee text-xl font-extrabold text-brand-black-500 mb-8">
+                        {privacyPolicyData.PrivacyPolicy.title2}
+                        </h2>
+                        <p className="font-abeezee text-brand-black-500 leading-6">{privacyPolicyData.PrivacyPolicy.consent}</p>
+                        <br />
+                        <br />
 
-                    <h2 className="sm:block font-abeezee text-xl font-extrabold text-brand-black-500 mb-8">
-                    {privacyPolicyData.PrivacyPolicy.informationCollection.title}
-                    </h2>
-                    <p className="font-abeezee text-brand-black-500 leading-6">{privacyPolicyData.PrivacyPolicy.informationCollection.content}</p>
-                    <br />
-                    <br />
+                        <h2 className="sm:block font-abeezee text-xl font-extrabold text-brand-black-500 mb-8">
+                        {privacyPolicyData.PrivacyPolicy.informationCollection.title}
+                        </h2>
+                        <p className="font-abeezee text-brand-black-500 leading-6">{privacyPolicyData.PrivacyPolicy.informationCollection.content}</p>
+                        <br />
+                        <br />
 
-                    <h2 className="sm:block font-abeezee text-xl font-extrabold text-brand-black-500 mb-8">
-                    {privacyPolicyData.PrivacyPolicy.informationUsage.title}
-                    </h2>
-                    <p className="font-abeezee text-brand-black-500 leading-6">{privacyPolicyData.PrivacyPolicy.informationUsage.content}</p>
-                    <br />
+                        <h2 className="sm:block font-abeezee text-xl font-extrabold text-brand-black-500 mb-8">
+                        {privacyPolicyData.PrivacyPolicy.informationUsage.title}
+                        </h2>
+                        <p className="font-abeezee text-brand-black-500 leading-6">{privacyPolicyData.PrivacyPolicy.informationUsage.content}</p>
+                        <br />
 
+                    </div>
+
+                    <div className="flex gap-5 mt-4 justify-center items-center">
+                        <Button
+                        green
+                        className="text-base xl:text-lg xl:px-8"
+                        iconClassName="xl:w-4 xl:h-4"
+                        >
+                            <Link href="/">Go back home</Link>
+                        </Button>
+            
                     </div>
 
                 </div>
