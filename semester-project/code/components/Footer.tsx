@@ -74,18 +74,22 @@ const Footer = () => (
           <div>
             <FooterListTitle>Contact Us</FooterListTitle>
             <ul className="font-abeezee text-brand-black-500 mb-4">
-              <li>123 Green Street, </li>
-              <li>EcoVille, Eco State</li>
-              <li>54321</li>
+              <Link href="https://www.google.com/maps/search/123+Green+Street,+EcoVille,+Eco+State+54321/@41.8799486,-87.6507917,17z/data=!3m1!4b1?entry=ttu" target="_blank">
+                <li>123 Green Street, </li>
+                <li>EcoVille, Eco State</li>
+                <li>54321</li>
+              </Link>
             </ul>
             <ul className="font-abeezee text-brand-black-500 mb-4">
               <li className="flex gap-2 items-center">
                 <Icons.phone className="w-4" /> +123 456 7890
               </li>
-              <li className="flex gap-2 items-center">
+              <Link href="https://accounts.google.com/InteractiveLogin/signinchooser?hl=en-gb&ifkv=ATuJsjx7Sgn1osh2CyLeaOEe2mmdHBQPN0LcgHUUpVtKUeCKTPdIR3084N2eRtH41Gw639YpWYskFg&theme=glif&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank">
+                <li className="flex gap-2 items-center">
                 <Icons.envelope className="w-4" />
                 info@binbuddy.com
-              </li>
+                </li>
+              </Link>
             </ul>
             
           </div>
