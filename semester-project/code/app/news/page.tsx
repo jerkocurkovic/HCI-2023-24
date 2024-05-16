@@ -163,7 +163,7 @@ const News: React.FC = () => {
   
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredArticles.map((article) => (
-            <Link href={`news/${article.id}`} ><ArticleCard key={article.id} article={article} /></Link>
+            <Link key={article.id} href={`news/${article.id}`} ><ArticleCard key={article.id} article={article} /></Link>
           ))}
         </div>
       </section>
@@ -212,7 +212,7 @@ const News: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredArticles.map((article) => (
-            <Link href={`news/${article.id}`} ><ArticleCard key={article.id} article={article} /></Link>
+            <Link key={article.id} href={`news/${article.id}`} ><ArticleCard key={article.id} article={article} /></Link>
           ))}
         </div>
       </section>
