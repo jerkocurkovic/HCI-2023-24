@@ -1,129 +1,222 @@
-import Link from "next/link";
-import clsx from "clsx";
+"use client"
 
-export const metadata = {
-  title: "News",
-};
+import Link from "next/link";
+import { useEffect, useState } from 'react';
+import ArticleCard from "./components/ArticleCard";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFilter, faMoneyBill, faRecycle, faTimes, faTrash, faTruck } from "@fortawesome/free-solid-svg-icons";
+
 
 export interface Article {
-  userId: number;
   id: number;
+  category: string;
   title: string;
-  body: string;
+  image: string;
+  content: string;
 }
 
-interface Pagination {
-  limit: number;
-  page: number;
-}
 
-const BASE_API_URL = "https://jsonplaceholder.typicode.com";
+const News: React.FC = () => {
+  const [articles, setArticles] = useState<Article[]>([]);
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
-const getArticles = async (
-  pagination: Pagination = {
-    limit: 9999,
-    page: 1,
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch('https://binbuddy-server.vercel.app/database/articles.json');
+        if (!response.ok) {
+          throw new Error('Failed to fetch articles');
+        }
+        const data = await response.json();
+        setArticles(data.articles);
+      } catch (error) {
+        console.error('Error fetching articles:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  const [greenButBord, setGreenButBord] = useState("rounded-3xl border-2 border-brand-green-500 p-2 font-abeezee font-medium mb-4 mr-2");
+  const [greenButBackg, setGreenButBackg] = useState("mr-2 text-brand-green-500");
+  const [greyButBord, setGreyButBord] = useState("rounded-3xl border-2 border-brand-grey-500 p-2 font-abeezee font-medium mb-4 mr-2");
+  const [greyButBackg, setGreyButBackg] = useState("mr-2 text-brand-grey-500");
+  const [blueButBord, setBlueButBord] = useState("rounded-3xl border-2 border-brand-blue-500 p-2 font-abeezee font-medium mb-4 mr-2");
+  const [blueButBackg, setBlueButBackg] = useState("mr-2 text-brand-blue-500");
+  const [brownButBord, setBrownButBord] = useState("rounded-3xl border-2 border-brand-brown-500 p-2 font-abeezee font-medium mb-4 mr-2");
+  const [brownButBackg, setBrownButBackg] = useState("mr-2 text-brand-brown-500");
+  const [blackButBord, setBlackButBord] = useState("rounded-3xl border-2 border-brand-black-500 p-2 font-abeezee font-medium mb-4 mr-2");
+  const [blackButBackg, setBlackButBackg] = useState("mr-2 text-brand-black-500");
+
+  const filteredArticles = selectedCategory ? articles.filter(article => article.category == selectedCategory) : articles;
+  const handleButtonClick = (color: string) =>{
+
+    if(color == "green"){
+      setGreenButBord("rounded-3xl border-2 border-white p-2 font-abeezee font-medium mb-4 mr-2 bg-brand-green-500 text-white");
+      setGreenButBackg("mr-2 text-white");
+      setSelectedCategory("bills")
+
+      setGreyButBord("rounded-3xl border-2 border-brand-grey-500 p-2 font-abeezee font-medium mb-4 mr-2")
+      setGreyButBackg("mr-2 text-brand-grey-500")
+      setBlueButBord("rounded-3xl border-2 border-brand-blue-500 p-2 font-abeezee font-medium mb-4 mr-2")
+      setBlueButBackg("mr-2 text-brand-blue-500")
+      setBrownButBord("rounded-3xl border-2 border-brand-brown-500 p-2 font-abeezee font-medium mb-4 mr-2");
+      setBrownButBackg("mr-2 text-brand-nrown-500");
+      setBlackButBord("rounded-3xl border-2 border-white p-2 font-abeezee font-medium mb-4 mr-2 bg-brand-black-500 bg-opacity-70 text-white");
+      setBlackButBackg("mr-2 text-white");
+    }
+    if(color == "grey"){
+      setGreyButBord("rounded-3xl border-2 border-white p-2 font-abeezee font-medium mb-4 mr-2 bg-brand-grey-500 text-white");
+      setGreyButBackg("mr-2 text-white");
+      setSelectedCategory("binBuddy")
+
+      setGreenButBord("rounded-3xl border-2 border-brand-green-500 p-2 font-abeezee font-medium mb-4 mr-2");
+      setGreenButBackg("mr-2 text-brand-green-500");
+      setBlueButBord("rounded-3xl border-2 border-brand-blue-500 p-2 font-abeezee font-medium mb-4 mr-2")
+      setBlueButBackg("mr-2 text-brand-blue-500")
+      setBrownButBord("rounded-3xl border-2 border-brand-brown-500 p-2 font-abeezee font-medium mb-4 mr-2");
+      setBrownButBackg("mr-2 text-brand-nrown-500");
+      setBlackButBord("rounded-3xl border-2 border-white p-2 font-abeezee font-medium mb-4 mr-2 bg-brand-black-500 bg-opacity-70 text-white");
+      setBlackButBackg("mr-2 text-white");
+    }
+    if(color == "blue"){
+      setBlueButBord("rounded-3xl border-2 border-white p-2 font-abeezee font-medium mb-4 mr-2 bg-brand-blue-500 text-white");
+      setBlueButBackg("mr-2 text-white");
+      setSelectedCategory("recycle")
+
+      setGreenButBord("rounded-3xl border-2 border-brand-green-500 p-2 font-abeezee font-medium mb-4 mr-2");
+      setGreenButBackg("mr-2 text-brand-green-500");
+      setGreyButBord("rounded-3xl border-2 border-brand-grey-500 p-2 font-abeezee font-medium mb-4 mr-2")
+      setGreyButBackg("mr-2 text-brand-grey-500")
+      setBrownButBord("rounded-3xl border-2 border-brand-brown-500 p-2 font-abeezee font-medium mb-4 mr-2");
+      setBrownButBackg("mr-2 text-brand-brown-500");
+      setBlackButBord("rounded-3xl border-2 border-white p-2 font-abeezee font-medium mb-4 mr-2 bg-brand-black-500 bg-opacity-70 text-white");
+      setBlackButBackg("mr-2 text-white");
+    }
+    if(color == "brown"){
+      setBrownButBord("rounded-3xl border-2 border-white p-2 font-abeezee font-medium mb-4 mr-2 bg-brand-brown-500 text-white");
+      setBrownButBackg("mr-2 text-white");
+      setSelectedCategory("wasteCollection")
+
+      setGreenButBord("rounded-3xl border-2 border-brand-green-500 p-2 font-abeezee font-medium mb-4 mr-2");
+      setGreenButBackg("mr-2 text-brand-green-500");
+      setGreyButBord("rounded-3xl border-2 border-brand-grey-500 p-2 font-abeezee font-medium mb-4 mr-2")
+      setGreyButBackg("mr-2 text-brand-grey-500")
+      setBlueButBord("rounded-3xl border-2 border-brand-blue-500 p-2 font-abeezee font-medium mb-4 mr-2")
+      setBlueButBackg("mr-2 text-brand-blue-500")
+      setBlackButBord("rounded-3xl border-2 border-white p-2 font-abeezee font-medium mb-4 mr-2 bg-brand-black-500 bg-opacity-70 text-white");
+      setBlackButBackg("mr-2 text-white");
+    }
+    if(color == "black"){
+      setBlackButBord("rounded-3xl border-2 border-white p-2 font-abeezee font-medium mb-4 mr-2 bg-brand-black-500 text-white");
+      setBlackButBackg("mr-2 text-white");
+      setSelectedCategory("")
+
+      setGreenButBord("rounded-3xl border-2 border-brand-green-500 p-2 font-abeezee font-medium mb-4 mr-2");
+      setGreenButBackg("mr-2 text-brand-green-500");
+      setGreyButBord("rounded-3xl border-2 border-brand-grey-500 p-2 font-abeezee font-medium mb-4 mr-2")
+      setGreyButBackg("mr-2 text-brand-grey-500")
+      setBlueButBord("rounded-3xl border-2 border-brand-blue-500 p-2 font-abeezee font-medium mb-4 mr-2")
+      setBlueButBackg("mr-2 text-brand-blue-500")
+      setBrownButBord("rounded-3xl border-2 border-brand-brown-500 p-2 font-abeezee font-medium mb-4 mr-2");
+      setBrownButBackg("mr-2 text-brand-brown-500");
+    }
+
+
   }
-): Promise<Article[]> => {
-  const data = await fetch(
-    `${BASE_API_URL}/posts?_limit=${pagination.limit}&_page=${pagination.page}`
-  );
-  return data.json();
-};
-
-const getTotalArticles = async (): Promise<number> => {
-  const response = await fetch(`${BASE_API_URL}/posts?_limit=1`, {
-    method: "HEAD",
-  });
-  // get x-total-count header
-  return parseInt(response.headers.get("x-total-count") || "1", 10);
-};
-
-export default async function News({
-  searchParams,
-}: {
-  searchParams: Record<string, string | string[] | undefined>;
-}) {
-  const { _limit, _page } = searchParams;
-  const [pageSize, page] = [_limit, _page].map(Number);
-  const totalArticles = await getTotalArticles();
-  const totalPages = Math.ceil(totalArticles / pageSize);
-
-  const articles = await getArticles({
-    limit: pageSize,
-    page: page,
-  });
-
-  return (
-    <main className="flex flex-col items-center min-h-screen max-w-5xl m-auto p-10">
-      <h1 className="flex justify-center text-4xl p-14 font-bold">News</h1>
-
-      {_limit && _page && (
-        <div className="flex items-baseline gap-8 pb-10">
-          <div>
-            Page {page} of {totalPages}
-          </div>
-          <div className="flex gap-4">
-            <Link
-              href={{
-                pathname: "/news",
-                query: { _page: 1, _limit: pageSize },
-              }}
-              className="rounded border bg-gray-100 px-3 py-1 text-gray-800"
-            >
-              First
-            </Link>
-            <Link
-              href={{
-                pathname: "/news",
-                query: { _page: page > 1 ? page - 1 : 1, _limit: pageSize },
-              }}
-              className={clsx(
-                "rounded border bg-gray-100 px-3 py-1 text-gray-800",
-                page === 1 && "pointer-events-none opacity-50"
-              )}
-            >
-              Previous
-            </Link>
-            <Link
-              href={{
-                pathname: "/news",
-                query: { _page: page + 1, _limit: pageSize },
-              }}
-             className={clsx(
-                "rounded border bg-gray-100 px-3 py-1 text-gray-800",
-                page === totalPages && "pointer-events-none opacity-50"
-              )}
-            >
-              Next
-            </Link>
-            <Link
-              href={{
-                pathname: "/news",
-                query: { _page: totalPages, _limit: pageSize },
-              }}
-              className="rounded border bg-gray-100 px-3 py-1 text-gray-800"
-            >
-              Last
-            </Link>
-          </div>
+  if(selectedCategory == null || selectedCategory == ""){
+    return (
+      <section className="container flex flex-col items-center">
+        <div className="text-center mt-4">
+          <h1 className="sm:block font-abeezee text-3xl font-extrabold text-bg-brand-black-500 mb-14">
+            News
+          </h1>
         </div>
-      )}
+  
+        <div className="flex flex-row gap-2 items-baseline">
+          <FontAwesomeIcon icon={faFilter} />
+          <h2 className="sm:block font-abeezee text-xl font-extrabold text-brand-black-500 mb-8">
+            Filter Category
+          </h2>
+        </div>
+  
+        <div className="flex md:flex-row flex-col gap-5 mt-4 justify-center items-center mb-14">
+          <button className={greenButBord} onClick={() => handleButtonClick("green")} >
+            <FontAwesomeIcon icon={faMoneyBill} className={greenButBackg} />
+            Bills 
+          </button>
+          <button className={greyButBord} onClick={() => handleButtonClick("grey")} >
+            <FontAwesomeIcon icon={faTrash} className={greyButBackg} />
+            binBuddy 
+          </button>
+          <button className={blueButBord} onClick={() => handleButtonClick("blue")} >
+            <FontAwesomeIcon icon={faRecycle} className={blueButBackg} />
+            Recycle 
+          </button>
+          <button className={brownButBord} onClick={() => handleButtonClick("brown")} >
+            <FontAwesomeIcon icon={faTruck} className={brownButBackg} />
+            Waste Collection 
+          </button>
+        </div>
+  
+  
+  
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {filteredArticles.map((article) => (
+            <Link href={`news/${article.id}`} ><ArticleCard key={article.id} article={article} /></Link>
+          ))}
+        </div>
+      </section>
+    );
+  }
+  else{
+    return (
+      <section className="container flex flex-col items-center">
+        <div className="text-center mt-4">
+          <h1 className="sm:block font-abeezee text-3xl font-extrabold text-bg-brand-black-500 mb-14">
+            News
+          </h1>
+        </div>
 
-      <ul className="flex flex-col gap-8">
-        {articles.map((post) => (
-          <li key={post.id}>
-            <Link href={`news/${post.id}`}>
-              <span className="text-2xl text-black-500 gap-4">
-                Article
-              </span>
-              <span className="text-2xl text-brand-green-500 px-4">
-                {post.title}
-              </span>
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </main>
-  );
-}
+        <div className="flex flex-row gap-2 items-baseline">
+          <FontAwesomeIcon icon={faFilter} />
+          <h2 className="sm:block font-abeezee text-xl font-extrabold text-brand-black-500 mb-8">
+            Filter Category
+          </h2>
+        </div>
+
+        <div className="flex md:flex-row flex-col gap-5 mt-4 justify-center items-center mb-14">
+          <button className={greenButBord} onClick={() => handleButtonClick("green")} >
+            <FontAwesomeIcon icon={faMoneyBill} className={greenButBackg} />
+            Bills 
+          </button>
+          <button className={greyButBord} onClick={() => handleButtonClick("grey")} >
+            <FontAwesomeIcon icon={faTrash} className={greyButBackg} />
+            binBuddy 
+          </button>
+          <button className={blueButBord} onClick={() => handleButtonClick("blue")} >
+            <FontAwesomeIcon icon={faRecycle} className={blueButBackg} />
+            Recycle 
+          </button>
+          <button className={brownButBord} onClick={() => handleButtonClick("brown")} >
+            <FontAwesomeIcon icon={faTruck} className={brownButBackg} />
+            Waste Collection 
+          </button>
+          <button className={blackButBord} onClick={() => handleButtonClick("black")} >
+            <FontAwesomeIcon icon={faTimes} className={blackButBackg} />
+            Discard Filter
+          </button>
+        </div>
+
+
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {filteredArticles.map((article) => (
+            <Link href={`news/${article.id}`} ><ArticleCard key={article.id} article={article} /></Link>
+          ))}
+        </div>
+      </section>
+    );}
+};
+
+export default News;
