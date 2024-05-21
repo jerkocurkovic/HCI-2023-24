@@ -140,7 +140,7 @@ const News: React.FC = () => {
           </h2>
         </div>
   
-        <div className="flex md:flex-row flex-col gap-5 mt-4 justify-center items-center mb-14">
+        <div className="flex flex-row gap-5 mt-4 justify-center items-center mb-14">
           <button className={greenButBord} onClick={() => handleButtonClick("green")} >
             <FontAwesomeIcon icon={faMoneyBill} className={greenButBackg} />
             Bills 
@@ -172,7 +172,7 @@ const News: React.FC = () => {
   else{
     return (
       <section className="container flex flex-col items-center">
-        <div className="text-center mt-4">
+        <div className="text-center">
           <h1 className="sm:block font-abeezee text-3xl font-extrabold text-bg-brand-black-500 mb-14">
             News
           </h1>
@@ -185,7 +185,7 @@ const News: React.FC = () => {
           </h2>
         </div>
 
-        <div className="flex md:flex-row flex-col gap-5 mt-4 justify-center items-center mb-14">
+        <div className="flex flex-row gap-5 mt-4 justify-center items-center">
           <button className={greenButBord} onClick={() => handleButtonClick("green")} >
             <FontAwesomeIcon icon={faMoneyBill} className={greenButBackg} />
             Bills 
@@ -202,6 +202,9 @@ const News: React.FC = () => {
             <FontAwesomeIcon icon={faTruck} className={brownButBackg} />
             Waste Collection 
           </button>
+        </div>
+
+        <div className="flex flex-row gap-5 justify-center items-center mb-14">
           <button className={blackButBord} onClick={() => handleButtonClick("black")} >
             <FontAwesomeIcon icon={faTimes} className={blackButBackg} />
             Discard Filter
