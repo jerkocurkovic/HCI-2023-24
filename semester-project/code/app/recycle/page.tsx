@@ -21,7 +21,7 @@ function Recycle(){
           </h1>
         </div>
 
-        <div className="flex md:flex-row flex-col gap-5 mt-4 justify-center items-center mb-6">
+        <div className="flex flex-row gap-5 justify-center items-center">
         <Button
             green
             className="text-base xl:text-lg xl:px-8"
@@ -37,7 +37,9 @@ function Recycle(){
             >
               <Link href="#paperRecycling">Paper Recycling</Link>
           </Button>
+        </div>
 
+        <div className="flex flex-row gap-5 justify-center items-center">
           <Button
             yellow
             className="text-base xl:text-lg xl:px-8"
@@ -45,7 +47,6 @@ function Recycle(){
             >
               <Link href="#plasticRecycling">Plastic Recycling</Link>
           </Button>
-
           <Button
             brown
             className="text-base xl:text-lg xl:px-8"
@@ -53,7 +54,9 @@ function Recycle(){
             >
               <Link href="#organicWasteRecycling">Organic Waste Recycling</Link>
           </Button>
+        </div>
 
+        <div className="flex flex-row gap-5 justify-center items-center mb-6">
           <Button
             black
             className="text-base xl:text-lg xl:px-8"
