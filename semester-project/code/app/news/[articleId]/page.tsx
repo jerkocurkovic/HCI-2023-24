@@ -36,10 +36,10 @@ function ArticlePage ({ params }: { params: Params }){
   }
 
   return (
-    <main className="flex flex-col items-center min-h-screen max-w-5xl m-auto p-10">
-      <h1 className="text-3xl font-bold p-10 capitalize mb-4">{article.title}</h1>
+    <main className="flex flex-col items-center min-h-screen max-w-5xl m-auto p-5">
+      <h1 className="text-3xl font-abeezee font-bold px-2 capitalize mb-5">{article.title}</h1>
       <img src={article.image} alt={article.title} className="mb-4" />
-      <p>{article.content}</p>
+      <p className="font-abeezee text-brand-black-500 leading-6 mt-3">{article.content}</p>
     </main>
   );
 };
