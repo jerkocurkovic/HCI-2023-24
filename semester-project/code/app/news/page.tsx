@@ -140,7 +140,7 @@ const News: React.FC = () => {
           </h2>
         </div>
   
-        <div className="flex flex-row gap-5 mt-4 justify-center items-center mb-14">
+        <div className="flex flex-row gap-3 justify-center items-center mr-1 ml-1">
           <button className={greenButBord} onClick={() => handleButtonClick("green")} >
             <FontAwesomeIcon icon={faMoneyBill} className={greenButBackg} />
             Bills 
@@ -185,7 +185,7 @@ const News: React.FC = () => {
           </h2>
         </div>
 
-        <div className="flex flex-row gap-5 mt-4 justify-center items-center">
+        <div className="flex flex-row gap-3 justify-center items-center mr-1 ml-1">
           <button className={greenButBord} onClick={() => handleButtonClick("green")} >
             <FontAwesomeIcon icon={faMoneyBill} className={greenButBackg} />
             Bills 
