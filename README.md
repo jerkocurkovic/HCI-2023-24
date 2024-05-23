@@ -3,7 +3,7 @@
 
 ## Shortcuts
 
-- **Last class-project** -> [Weekly progress, status and problems (2/4)](/class-projects/Weekly-progress,status-and-problems-(2of4)/)
+- **Report** -> [Report](/docs/Seminar-KorisnickaSucelja-JerkoCurkovic.pdf/)
 - **Link to project** ->  https://binbuddy.vercel.app/
 
 
